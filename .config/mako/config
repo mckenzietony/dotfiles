@@ -1,8 +1,12 @@
 # mako configs
-# man 5 mako
+# man 5 mako for more options
 
 # global configs
 max-history=10
+
+# binding opts
+on-button-left=dismiss
+on-button-right=dismiss-all
 
 # sexy visuals
 font=monospace 14
