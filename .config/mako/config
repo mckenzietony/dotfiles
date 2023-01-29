@@ -1,0 +1,17 @@
+# mako configs
+# man 5 mako
+
+# global configs
+max-history=10
+
+# sexy visuals
+font=monospace 14
+background-color=#446280
+border-color=#8fd4ff
+width=500
+height=300
+outer-margin=1
+margin=1
+border-size=2
+border-radius=5
+default-timeout=9001
