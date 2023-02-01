@@ -251,6 +251,12 @@ exec wl-paste -t text --watch clipman store --no-persist
 # launch mako
 exec mako --config ~/.config/mako/config &
 
+# launch app preset workspaces
+# find app classes with 'swaymsg -t get_tree'
+assign [class="Signal"] workspace 9
+## Spotify refuses to open on assigned workspace
+# assign [class="spotify"] workspace 9
+
 # run pure wayland (no x)
 # xwayland disable
 
