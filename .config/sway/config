@@ -251,11 +251,16 @@ exec wl-paste -t text --watch clipman store --no-persist
 # launch mako
 exec mako --config ~/.config/mako/config &
 
-# launch app preset workspaces
+## launch app preset workspaces
 # find app classes with 'swaymsg -t get_tree'
 assign [class="Signal"] workspace 9
+assign [class="Slack"] workspace 9
 ## Spotify refuses to open on assigned workspace
-# assign [class="spotify"] workspace 9
+# workaround needed: https://github.com/swaywm/sway/issues/3793
+assign [class="Spotify"] workspace 9
+for_window [class="Spotify"] window to workspace 9
+# or
+for_window [class="Spotify"] container to workspace 9
 
 # run pure wayland (no x)
 # xwayland disable
